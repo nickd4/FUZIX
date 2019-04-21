@@ -99,8 +99,6 @@ void create_init(void)
 
 	udata.u_insys = 1;
 
-	init_process->p_status = P_RUNNING;
-
 	/* Poke the execve arguments into user data space so _execve() can read them back */
 	/* Some systems only have a tiny window we can use at boot as most of
 	   this space is loaded with common memory */
